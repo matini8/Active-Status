@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Active Status</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+<div class="col-6" style="margin-top: 150px;">
+	<h1>Learn your code by <br>watching others</h1>
+        <p class="my">See how experienced developer solve problems in  real-time<br>  watching scripted tutorials is great, but understanding how  <br>developers think is invaluable</p>
+</div>
+<div class="col-3 menu" style="margin-right: -20px;">
+	<ul>
+    <li>Try it free 7days <span style="color: grey;" >than $20/mo. thereafter</span>
+     </li>
+	</div>
+<div class="col-4" style="margin-top: -10px;">
+	<form action="a">
+		<p><input type="text" placeholder="firstName" required="name" name="firstName">
+			<span id="error"></span>
+		</p>
+		<p><input type="text" placeholder="lastName" required="name" name="lastName"><span id="error"></span>
+		</p>
+ 		<p><input type="text" placeholder="email@example/com" required="Email" name="Email"><span id="error"></span>
+ 		</p>
+ 		<p><input type="text" placeholder="password" required="password" name="password"><span id="error"></span></p>
+ 		<p>
+ 		<button type="submit"onclick="errorMessage()" style=" padding: 10px; width: 310px;background-color: hsl(154, 59%, 51%);; border: none;border-radius: 10px; ">
+          <i></i> CLIAM YOUR FREE TRAIL
+        </button>
+ 	</p>
+</form>
+<p style="color: #333;">By clicking the button, you are agreeing to <span style="color: red">Terms and services</span></p>
+
+</body>
+<script>
+    function errorMessage() {
+        var error = document.getElementById("error")
+        if (isNaN(document.getElementById("email").value)) 
+        {
+ 
+            // Changing HTML to draw attention
+            error.innerHTML = "<span style='color: red;'>"+
+                        "Please enter a valid email</span>"
+        } else {
+            error.innerHTML = ""
+        }
+    }
+    </body>
+</html>
